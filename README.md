@@ -7,8 +7,7 @@
 <p>Please review the existing issues to see whether your problem has already been reported:</p>
 
 <p><strong>Issues:</strong> 
-<a href="https://github.com/oddforms-design/AudioRoo/issues">
-https://github.com/oddforms-design/AudioRoo/issues
+[Current Issues](a href="https://github.com/oddforms-design/AudioRoo/issues")
 </a>
 </p>
 

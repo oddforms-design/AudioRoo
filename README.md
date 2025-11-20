@@ -1,12 +1,16 @@
 <h1>AudioRoo Support</h1>
 
-<p>AudioRoo is a (currently) closed-source FFMPEG-powered audio converter for macOS. This repository is used for issue tracking, discussions and potentially a wiki in the future.</p>
+<p>AudioRoo is a (currently) closed-source FFMPEG-powered audio converter for macOS. This repository is used for issue tracking, discussions, and potentially a wiki in the future.</p>
 
 <h2>Before Opening an Issue</h2>
 
 <p>Please review the existing issues to see whether your problem has already been reported:</p>
 
-<p><strong>Issues:</strong> <a href="/oddforms-design/AudioRoo/issues">View Issues</a></p>
+<p><strong>Issues:</strong> 
+<a href="https://github.com/oddforms-design/AudioRoo/issues">
+https://github.com/oddforms-design/AudioRoo/issues
+</a>
+</p>
 
 <p>Search by keyword, error message, or feature area. If you find an existing issue that matches your situation, you can add any additional details such as reproduction steps, logs, or screenshots.</p>
 
@@ -14,7 +18,11 @@
 
 <p>To open a new bug report:</p>
 
-<p><strong>New Issue:</strong> <a href="/oddforms-design/AudioRoo/issues/new">Create a New Issue</a></p>
+<p><strong>New Issue:</strong> 
+<a href="https://github.com/oddforms-design/AudioRoo/issues/new">
+https://github.com/oddforms-design/AudioRoo/issues/new
+</a>
+</p>
 
 <p>Please include:</p>
 
@@ -32,8 +40,15 @@
 <p>Feature ideas or enhancement requests can be submitted here:</p>
 
 <p>
-<strong>Feature Request Issue:</strong> <a href="/oddforms-design/AudioRoo/issues/new">Create Feature Request</a><br>
-<strong>Discussions:</strong> <a href="/oddforms-design/AudioRoo/discussions">Open Discussions</a>
+<strong>Feature Request Issue:</strong> 
+<a href="https://github.com/oddforms-design/AudioRoo/issues/new">
+https://github.com/oddforms-design/AudioRoo/issues/new
+</a>
+<br>
+<strong>Discussions:</strong> 
+<a href="https://github.com/oddforms-design/AudioRoo/discussions">
+https://github.com/oddforms-design/AudioRoo/discussions
+</a>
 </p>
 
 <p>Describe the feature, the problem it addresses, and any helpful context or examples.</p>
@@ -42,7 +57,11 @@
 
 <p>For usage questions, compatibility concerns, feedback, or anything else:</p>
 
-<p><strong>Discussions:</strong> <a href="/oddforms-design/AudioRoo/discussions">Open Discussions</a></p>
+<p><strong>Discussions:</strong> 
+<a href="https://github.com/oddforms-design/AudioRoo/discussions">
+https://github.com/oddforms-design/AudioRoo/discussions
+</a>
+</p>
 
 <h2>Website</h2>
 

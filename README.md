@@ -37,7 +37,7 @@
 
 <p>
 <strong>Feature Request Issue:</strong> 
-<a href="https://github.com/oddforms-design/AudioRoo/issues/new">Submit a Feature Request</a>
+<a href="https://github.com/oddforms-design/AudioRoo/issues/new?labels=Feature%20Request">Submit a Feature Request</a>
 <br>
 <strong>Discussions:</strong> 
 <a href="https://github.com/oddforms-design/AudioRoo/discussions">Open Discussions</a>

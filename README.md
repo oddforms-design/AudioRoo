@@ -1,6 +1,6 @@
 <h1>AudioRoo Support</h1>
 
-<p>AudioRoo is a (currently) closed-source FFMPEG-powered audio converter for macOS. This repository is used for issue tracking and discussions only.</p>
+<p>AudioRoo is a (currently) closed-source FFMPEG-powered audio converter for macOS. This repository is used for issue tracking, discussions and potentially a wiki in the future.</p>
 
 <h2>Before Opening an Issue</h2>
 

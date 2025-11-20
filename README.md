@@ -7,8 +7,7 @@
 <p>Please review the existing issues to see whether your problem has already been reported:</p>
 
 <p><strong>Issues:</strong> 
-[Current Issues](a href="https://github.com/oddforms-design/AudioRoo/issues")
-</a>
+<a href="https://github.com/oddforms-design/AudioRoo/issues">Current Issues</a>
 </p>
 
 <p>Search by keyword, error message, or feature area. If you find an existing issue that matches your situation, you can add any additional details such as reproduction steps, logs, or screenshots.</p>
@@ -18,9 +17,7 @@
 <p>To open a new bug report:</p>
 
 <p><strong>New Issue:</strong> 
-<a href="https://github.com/oddforms-design/AudioRoo/issues/new">
-https://github.com/oddforms-design/AudioRoo/issues/new
-</a>
+<a href="https://github.com/oddforms-design/AudioRoo/issues/new">Create a New Issue</a>
 </p>
 
 <p>Please include:</p>
@@ -40,14 +37,10 @@ https://github.com/oddforms-design/AudioRoo/issues/new
 
 <p>
 <strong>Feature Request Issue:</strong> 
-<a href="https://github.com/oddforms-design/AudioRoo/issues/new">
-https://github.com/oddforms-design/AudioRoo/issues/new
-</a>
+<a href="https://github.com/oddforms-design/AudioRoo/issues/new">Submit a Feature Request</a>
 <br>
 <strong>Discussions:</strong> 
-<a href="https://github.com/oddforms-design/AudioRoo/discussions">
-https://github.com/oddforms-design/AudioRoo/discussions
-</a>
+<a href="https://github.com/oddforms-design/AudioRoo/discussions">Open Discussions</a>
 </p>
 
 <p>Describe the feature, the problem it addresses, and any helpful context or examples.</p>
@@ -57,12 +50,10 @@ https://github.com/oddforms-design/AudioRoo/discussions
 <p>For usage questions, compatibility concerns, feedback, or anything else:</p>
 
 <p><strong>Discussions:</strong> 
-<a href="https://github.com/oddforms-design/AudioRoo/discussions">
-https://github.com/oddforms-design/AudioRoo/discussions
-</a>
+<a href="https://github.com/oddforms-design/AudioRoo/discussions">Open Discussions</a>
 </p>
 
 <h2>Website</h2>
 
 <p>More information about AudioRoo is available at:<br>
-<a href="https://audioroo.app">https://audioroo.app</a></p>
+<a href="https://audioroo.app">Visit audioroo.app</a></p>

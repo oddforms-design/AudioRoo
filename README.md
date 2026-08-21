@@ -35,7 +35,7 @@
 
 <p><a href="https://github.com/oddforms-design/AudioRoo/issues/new?labels=feature%20request">Submit a feature request</a> &nbsp;|&nbsp; <a href="https://github.com/oddforms-design/AudioRoo/discussions">Join a discussion</a></p>
 
-<p>Tell me what you're trying to do and why the current version makes it awkward. That's more useful than a specific solution, and it often leads somewhere better.</p>
+<p>Tell me what you're trying to do and how the current version handles it (or doesn't). I can't always promise a solution, but may look at requests for future updates.</p>
 
 <h2>Anything Else</h2>
 

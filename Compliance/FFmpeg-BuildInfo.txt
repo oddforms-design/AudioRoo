@@ -110,8 +110,3 @@ Build instructions:
 
     FFmpeg is then configured with the options given above, with PKG_CONFIG_PATH pointing at
     $PREFIX/lib/pkgconfig.
-
-License text:
-
-    See the FFmpeg-License.txt file in this bundle for the full license terms, and the
-    accompanying per-library license files for the libraries listed above.

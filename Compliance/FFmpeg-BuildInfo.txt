@@ -1,0 +1,117 @@
+AudioRoo uses FFmpeg and FFprobe, licensed under the LGPL v2.1 or later.
+FFmpeg and FFprobe are bundled as separate executables in Contents/MacOS/Helpers and are
+invoked as external programs. You may replace these executables with your own builds.
+Any replacement must be code-signed before the app will run it.
+
+Source and identification for the exact version used for AudioRoo v2.0.0:
+
+  FFmpeg, built from the development branch (not a tagged release):
+    Commit:   e2c335ab5c81bad21a641979feaaafae8c894d16
+    Upstream: https://git.ffmpeg.org/ffmpeg.git
+    Archive:  https://github.com/oddforms-design/AudioRoo/blob/v2.0.0/Compliance/ffmpeg-e2c335ab5c81bad21a641979feaaafae8c894d16.tar.gz
+
+    The complete, unmodified source archive for this commit is mirrored at the link above,
+    alongside the sources for every library listed below.
+
+External libraries used in this FFmpeg build:
+
+  - LAME 4.0 (LGPL v2.0 or later)
+    Upstream: https://lame.sourceforge.io
+    Archive:  https://github.com/oddforms-design/AudioRoo/blob/v2.0.0/Compliance/lame-4.0.tar.gz
+
+  - mpg123 1.33.7 (LGPL v2.1)
+    Upstream: https://sourceforge.net/projects/mpg123/files/mpg123/1.33.7/
+    Archive:  https://github.com/oddforms-design/AudioRoo/blob/v2.0.0/Compliance/mpg123-1.33.7.tar.bz2
+
+  - libogg 1.3.6 (BSD-style license)
+    Upstream: https://xiph.org/ogg
+    Archive:  https://github.com/oddforms-design/AudioRoo/blob/v2.0.0/Compliance/libogg-1.3.6.tar.gz
+
+  - libvorbis 1.3.7 (BSD-style license)
+    Upstream: https://xiph.org/vorbis
+    Archive:  https://github.com/oddforms-design/AudioRoo/blob/v2.0.0/Compliance/libvorbis-1.3.7.tar.gz
+
+  - libopus 1.6.1 (BSD-style license)
+    Upstream: https://opus-codec.org
+    Archive:  https://github.com/oddforms-design/AudioRoo/blob/v2.0.0/Compliance/opus-1.6.1.tar.gz
+
+  - libsoxr 0.1.3 (LGPL v2.0 or later)
+    Upstream: https://sourceforge.net/projects/soxr/
+    Archive:  https://github.com/oddforms-design/AudioRoo/blob/v2.0.0/Compliance/soxr-0.1.3-Source.tar.xz
+
+Source modifications:
+
+  FFmpeg, mpg123, libogg, libopus and libsoxr were built from unmodified upstream source.
+  Two libraries required a small build fix for the toolchain used. Both changes are applied
+  in the build steps below and are described here in full:
+
+  - LAME 4.0: frontend/parse.c uses setlocale() and LC_CTYPE without including <locale.h>.
+    Clang 21 in -std=gnu23 mode treats this as an error rather than a warning. The fix
+    inserts "#include <locale.h>" as the first line of frontend/parse.c. No other change
+    is made.
+
+  - libvorbis 1.3.7: the build references -force_cpusubtype_ALL, an obsolete flag that
+    current Apple toolchains reject. The fix removes every occurrence of that string from
+    the source tree. No other change is made.
+
+Configuration used to build FFmpeg (one build per architecture, x86_64 and arm64, combined
+into a universal binary; --prefix and the include/library paths point at a local staging
+directory holding the libraries above):
+
+  --pkg-config-flags=--static
+  --extra-libs='-lpthread -lm -lmpg123'
+  --enable-static --disable-shared
+  --disable-doc --disable-ffplay --disable-network --disable-avdevice
+  --enable-ffmpeg --enable-ffprobe
+  --enable-libmp3lame --enable-libvorbis --enable-libopus --enable-libsoxr
+
+Build instructions:
+
+  Toolchain: Apple clang 21 on macOS. Each library is built once per architecture
+  (x86_64 and arm64) into a local staging prefix, then the resulting binaries are combined
+  with lipo. $PREFIX below refers to that staging directory. Libraries are built in the order
+  listed, before FFmpeg itself.
+
+    mpg123 1.33.7
+      ./configure --prefix=$PREFIX --enable-static --disable-shared
+      make && make install
+
+    LAME 4.0
+      sed -i '' '1i\
+      #include <locale.h>
+      ' frontend/parse.c
+      ./configure --prefix=$PREFIX --enable-static --disable-shared
+      make && make install
+
+    libogg 1.3.6
+      ./configure --prefix=$PREFIX --enable-static --disable-shared
+      make && make install
+
+    libvorbis 1.3.7
+      LC_ALL=C find . -type f -exec sed -i.bak 's/-force_cpusubtype_ALL//g' {} +
+      ./configure --prefix=$PREFIX --with-ogg=$PREFIX --enable-static
+                  --disable-shared --disable-examples
+      make && make install
+
+    libopus 1.6.1
+      ./configure --prefix=$PREFIX --enable-static --disable-shared
+      make && make install
+
+    libsoxr 0.1.3    (CMake)
+      cmake .. -DCMAKE_INSTALL_PREFIX=$PREFIX -DBUILD_SHARED_LIBS=OFF
+               -DBUILD_TESTS=OFF -DCMAKE_POLICY_VERSION_MINIMUM=3.5
+               -DCMAKE_OSX_ARCHITECTURES=<arch>
+      make && make install
+      
+    Remove -DCMAKE_OSX_ARCHITECTURES=<arch> on the intel build
+    
+    LAME 4.0 requires libmpg123 >= 1.26.0 at configure time, which is why mpg123 is built
+    first and listed here.
+
+    FFmpeg is then configured with the options given above, with PKG_CONFIG_PATH pointing at
+    $PREFIX/lib/pkgconfig.
+
+License text:
+
+    See the FFmpeg-License.txt file in this bundle for the full license terms, and the
+    accompanying per-library license files for the libraries listed above.

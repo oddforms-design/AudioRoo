@@ -22,4 +22,4 @@ matching that version — library versions may differ between releases.
 
 The exact FFmpeg commit or release, the full configure line, and the license texts for every
 component are in `Contents/Resources/Licensing/` inside the application bundle —
-see `FFmpeg-BuildInfo.txt`.
+see `Open-Source-Notices.txt`.

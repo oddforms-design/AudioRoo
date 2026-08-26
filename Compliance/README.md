@@ -9,7 +9,7 @@ place, for anyone who wants to inspect, rebuild, or replace them.
 
 ## Where the source is
 
-Every AudioRoo release has a matching tag here, with the complete and unmodified source
+Every AudioRoo release v2+ has a matching tag here, with the complete and unmodified source
 archives attached as release assets.
 
 Each release includes the FFmpeg/FFprobe source and the source and build config for every library built into it

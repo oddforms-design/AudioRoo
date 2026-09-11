@@ -20,7 +20,7 @@ for every library built into them: LAME, mpg123, libogg, libvorbis, libopus and 
 
 ## Build configuration
 
-The exact FFmpeg commit or release, the full configure line, and the license texts for every
-component are in `Open-Source-Notices.txt`, which ships in `Contents/Resources/Licensing/`
-inside the application bundle and is also included with each tag here. Build instructions may
+The license texts for every component are in `Contents/Resources/Licensing/` inside the
+application bundle. `Open-Source-Notices.txt`, in that folder and posted here, gives the
+exact FFmpeg commit or release and the full configure line for each library. Build details may
 vary between versions and are updated under the same tagging system.

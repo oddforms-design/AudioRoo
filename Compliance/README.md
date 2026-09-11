@@ -8,17 +8,19 @@ This folder exists so the complete source and licenses for these components is a
 
 ## Where the source is
 
-Every AudioRoo release v2+ has a matching tag here, with the complete and unmodified source
-archives attached as release assets.
+A tag is created whenever the bundled libraries change, with the complete and unmodified
+source archives attached as release assets. App versions released between those points reuse
+the most recent tag, because the binaries they ship are unchanged.
 
-Each release includes the FFmpeg/FFprobe source and the source and build config for every library built into it
-(LAME, mpg123, libogg, libvorbis, libopus, libsoxr).
+To find the source for a given version of AudioRoo, use the most recent tag that does not
+exceed it. Older tags stay published indefinitely.
 
-Older releases stay published. If you are running an older version of AudioRoo, use the version tag
-matching that version — library versions may differ between releases.
+Each tag includes the FFmpeg and FFprobe source, along with the source and build configuration
+for every library built into them: LAME, mpg123, libogg, libvorbis, libopus and libsoxr.
 
 ## Build configuration
 
 The exact FFmpeg commit or release, the full configure line, and the license texts for every
-component are in `Contents/Resources/Licensing/` inside the application bundle —
-see `Open-Source-Notices.txt`.
+component are in `Open-Source-Notices.txt`, which ships in `Contents/Resources/Licensing/`
+inside the application bundle and is also included with each tag here. Build instructions may
+vary between versions and are updated under the same tagging system.

@@ -1,11 +1,10 @@
 # Third-Party Sources (License Compliance)
 
-AudioRoo bundles **FFmpeg** and **FFprobe**, which are
-licensed under the LGPL v2.1 or later. They ship as separate executables in
-`Contents/MacOS/Helpers` and are invoked as external programs. 
+AudioRoo is made possible by open-source software and I am grateful to the developers of these packages.
 
-This folder exists so the complete source for those components is available from the same
-place, for anyone who wants to inspect, rebuild, or replace them.
+The app uses FFmpeg, FFprobe, LAME, mpg123, libsoxr, libogg, libvorbis and libopus under various licenses. 
+
+This folder exists so the complete source and licenses for these components is available from the same place.
 
 ## Where the source is
 

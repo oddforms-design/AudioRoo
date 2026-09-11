@@ -1,3 +1,6 @@
+AudioRoo is made possible by open-source software. I'm grateful to the authors
+and contributors of the projects listed below.
+
 AudioRoo uses FFmpeg and FFprobe, licensed under the LGPL v2.1 or later.
 FFmpeg and FFprobe are bundled as separate executables in Contents/MacOS/Helpers and are
 invoked as external programs. You may replace these executables with your own builds.

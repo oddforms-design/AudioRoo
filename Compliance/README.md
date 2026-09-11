@@ -12,7 +12,7 @@ A tag is created whenever the bundled libraries change, with the complete and un
 source archives attached as release assets. App versions released between those points reuse
 the most recent tag, because the binaries they ship are unchanged.
 
-To find the source for a given version of AudioRoo, use the most recent tag that does not
+To find the source for a given version of AudioRoo v2+, use the most recent tag that does not
 exceed it. Older tags stay published indefinitely.
 
 Each tag includes the FFmpeg and FFprobe source, along with the source and build configuration

@@ -11,6 +11,9 @@
 <h3>A file failed to convert</h3>
 <p>AudioRoo accepts almost any container that holds audio, but some files are damaged or use unusual encodings. Mousing over the error indicator icon will provide you with a full error and reason for failure from the encoder. Include that output if you report it.</p>
 
+<h2>What's New</h2>
+<p>Every version's changes are in the <a href="https://github.com/oddforms-design/AudioRoo/blob/main/CHANGELOG.md">changelog</a>.</p>
+
 <h2>Ask a Question</h2>
 <p>Not sure whether something is a bug, or just want to ask how something works? Discussions is the place. Usage questions, compatibility concerns, and general feedback are all welcome.</p>
 <p><a href="https://github.com/oddforms-design/AudioRoo/discussions">Open Discussions</a></p>

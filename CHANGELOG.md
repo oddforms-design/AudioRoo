@@ -2,6 +2,14 @@
 
 What changed in each version of AudioRoo, newest first. Issue numbers link to this repository's [issues](https://github.com/oddforms-design/AudioRoo/issues).
 
+## 2.0.4
+
+- Removed WAV "8-bit Signed" from Advanced Mode. WAV stores 8-bit audio only as unsigned, so this option never produced a file. "8-bit Unsigned" is still there.
+- Fixes:
+  - A conversion that stopped unexpectedly showed as "Cancelled". It now shows as failed, with the reason.
+  - Files added with a format warning were sometimes skipped without being tried. They're now converted.
+  - The batch summary could count a failed file twice.
+
 ## 2.0.3
 
 - Very large batches no longer crash by running out of open files ([#47](https://github.com/oddforms-design/AudioRoo/issues/47)).
